@@ -15,3 +15,27 @@ describe("Books names test suit", () => {
     ]);
   });
 });
+
+describe("Books names negative result", () => {
+  it("Books names not should be sorted", () => {
+    expect(
+      sorting.sortByName([
+        "Гарри Поттер",
+        "Властелин Колец",
+        "Волшебник изумрудного города",
+      ])
+    ).toEqual([
+      "Властелин Колец",
+      "Волшебник изумрудного города",
+      "Гарри Поттер",
+    ]);
+  });
+});
+
+describe("Books names test suit", () => {
+  it("Book names have the same meaning", () => {
+    expect(
+      sorting.sortByName(["Гарри Поттер", "Гарри Поттер", "Гарри Поттер"])
+    ).toEqual(["Гарри Поттер", "Гарри Поттер", "Гарри Поттер"]);
+  });
+});

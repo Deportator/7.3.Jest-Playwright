@@ -1,0 +1,15 @@
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+/node_modules/
+user.js
+/playwright-report/
+/coverage/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+.history/
+/.vscode/*
